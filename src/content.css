@@ -1,0 +1,23 @@
+.constellation { overflow: hidden; }
+.star-8 { top: 74%; left: 7%; animation-delay: 1.2s; color: #c9b0ff; }
+.star-9 { top: 76%; left: 55%; animation-delay: .3s; }
+.star-10 { top: 45%; right: 22%; animation-delay: 2.1s; color: #63e9ff; }
+.star-11 { top: 18%; right: 23%; animation-delay: 1.5s; }
+.star-12 { bottom: 12%; right: 3%; animation-delay: .7s; color: #c9b0ff; }
+.star-13 { top: 52%; left: 29%; animation-delay: 2.8s; }
+.star-14 { top: 8%; left: 70%; animation-delay: .6s; color: #63e9ff; }
+.star-15 { bottom: 36%; right: 35%; animation-delay: 1.9s; }
+.star-16 { top: 68%; right: 20%; animation-delay: 3.1s; color: #c9b0ff; }
+.star-17 { bottom: 3%; left: 60%; animation-delay: 1.3s; }
+.star-18 { top: 34%; left: 64%; animation-delay: 2.4s; color: #63e9ff; }
+.star-19 { bottom: 18%; left: 17%; animation-delay: .2s; }
+.star-20 { top: 1%; left: 30%; animation-delay: 2.2s; color: #c9b0ff; }
+.star-21 { top: 58%; right: 1%; animation-delay: 1.6s; }
+.star-22 { bottom: 1%; left: 1%; animation-delay: 2.6s; color: #63e9ff; }
+.star-23 { top: 43%; left: 44%; animation-delay: 3.3s; }
+.contact-note { display: block; margin-top: 13px; color: #a8a6c4; font-size: .75rem; }
+.hidden-field { position: absolute !important; left: -9999px !important; opacity: 0 !important; pointer-events: none !important; }
+@media (max-width: 760px) {
+  .constellation { min-height: 420px; }
+  .star { font-size: .62rem; padding: 9px 11px; }
+}
