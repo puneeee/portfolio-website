@@ -72,6 +72,8 @@ html[data-theme="light"] .email { color: #28214f; }
 .project:hover .project-art img { transform: scale(1.1); filter: saturate(1.18) contrast(1.08); }
 .project-art::after { content: ""; position: absolute; inset: 0; background: linear-gradient(135deg, rgba(8,8,18,.12), rgba(8,8,18,.48)), linear-gradient(35deg, rgba(116,83,255,.23), transparent 55%); pointer-events: none; }
 .project-art > small, .project-art > b, .project-art > span { z-index: 2; }
+.project { grid-template-columns: 1fr 1fr; }
+.project > a { display: none; }
 .paper-link { padding: 0 10px; font: 700 .66rem/1.2 Arial, sans-serif; letter-spacing: .04em; text-align: center; text-transform: uppercase; }
 .research-link { display: inline-block; margin: 18px 0 0; color: #dffbff; font-size: .78rem; font-weight: 700; border-bottom: 1px solid #dffbff77; padding-bottom: 4px; }
 .contact-note.success { color: #74efcb; }
@@ -81,3 +83,4 @@ html[data-theme="light"] .email { color: #28214f; }
   .constellation { min-height: 420px; }
   .star { font-size: .62rem; padding: 9px 11px; }
 }
+@media (max-width: 900px) { .nav nav { display: none; } }
