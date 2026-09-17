@@ -18,9 +18,54 @@
 .contact-note { display: block; margin-top: 13px; color: #a8a6c4; font-size: .75rem; }
 .hidden-field { position: absolute !important; left: -9999px !important; opacity: 0 !important; pointer-events: none !important; }
 .marquee { animation: none; }
-.marquee-track { display: flex; width: max-content; animation: marquee-loop 25s linear infinite; will-change: transform; }
+.marquee-track { display: flex; width: max-content; animation: marquee-loop 36s linear infinite; will-change: transform; }
 .marquee-track > span { display: block; flex: 0 0 auto; padding-right: 18px; }
-@keyframes marquee-loop { to { transform: translateX(-50%); } }
+@keyframes marquee-loop { to { transform: translateX(-25%); } }
+.nav-actions { display: flex; align-items: center; gap: 8px; }
+.theme-button { padding: 10px 12px; border: 1px solid var(--line); border-radius: 99px; color: #c4c1df; font: 700 .64rem/1 Arial, sans-serif; letter-spacing: .1em; transition: .2s; }
+.theme-button span { color: var(--cyan); font-size: .9rem; margin-right: 5px; }
+.theme-button:hover { color: #fff; border-color: #827ada; }
+
+/* The portfolio stays cohesive in its default dark studio theme; light is an intentional, full-page alternative. */
+.work { background: linear-gradient(135deg, #0d0c1b, #11122a); color: #efefff; }
+.work .label { color: var(--cyan); }
+.work h2 em { color: var(--cyan); }
+.project { border-color: #d9d5ff26; }
+.project:last-child { border-color: #d9d5ff26; }
+.project-copy > div > p { color: #a99aff; }
+.project-copy article, .project-copy footer small { color: #aaa8c0; }
+.project-copy footer span { border-color: #dad6ff3d; color: #e8e6fb; }
+.project > a { border-color: #d9d5ff26; color: var(--cyan); }
+
+html[data-theme="light"] body { background: #f3f2f8; color: #151424; }
+html[data-theme="light"] .nav { background: #fffffff0; border-color: #25213a24; }
+html[data-theme="light"] .nav nav button, html[data-theme="light"] .menu-button, html[data-theme="light"] .theme-button { color: #4b4861; border-color: #25213a24; }
+html[data-theme="light"] .theme-button:hover, html[data-theme="light"] .nav nav button:hover, html[data-theme="light"] .menu-button:hover { color: #211e40; }
+html[data-theme="light"] .hero { background: radial-gradient(circle at 80% 20%, #c9efff, transparent 28%), radial-gradient(circle at 10% 80%, #e2d6ff, transparent 30%), #f3f2f8; }
+html[data-theme="light"] .hero .lede, html[data-theme="light"] .coordinates, html[data-theme="light"] .scroll-note { color: #5f5b72; }
+html[data-theme="light"] .code-card, html[data-theme="light"] .status-card { background: #ffffffc9; border-color: #302a551c; color: #201c3b; }
+html[data-theme="light"] .status-card span { color: #625d79; }
+html[data-theme="light"] .marquee { color: #3f3a61; border-color: #2823442b; }
+html[data-theme="light"] .about, html[data-theme="light"] .skill-section, html[data-theme="light"] .playground, html[data-theme="light"] .timeline, html[data-theme="light"] .achievement, html[data-theme="light"] .contact { background: #f3f2f8; color: #151424; }
+html[data-theme="light"] .about { background: #e9e7f3; }
+html[data-theme="light"] .about-grid > div > p, html[data-theme="light"] .heading-row > p, html[data-theme="light"] .play-grid > div > p, html[data-theme="light"] .timeline article span { color: #5f5b72; }
+html[data-theme="light"] .star { background: #ffffffd9; border-color: #3a315a31; box-shadow: 0 8px 30px #7768a226; }
+html[data-theme="light"] .skills, html[data-theme="light"] .skill, html[data-theme="light"] .timeline > div, html[data-theme="light"] .timeline article { border-color: #2b254525; }
+html[data-theme="light"] .skill:hover { background: #e4e1f4; }
+html[data-theme="light"] .work { background: #e9e8f4; color: #10101d; }
+html[data-theme="light"] .work .label { color: #6558ac; }
+html[data-theme="light"] .work h2 em { color: #5e45c8; }
+html[data-theme="light"] .project { border-color: #18172935; }
+html[data-theme="light"] .project-copy > div > p { color: #6251ac; }
+html[data-theme="light"] .project-copy article, html[data-theme="light"] .project-copy footer small { color: #5c5a70; }
+html[data-theme="light"] .project-copy footer span { border-color: #24223c44; color: #10101d; }
+html[data-theme="light"] .project > a { border-color: #18172935; color: #5a43c7; }
+html[data-theme="light"] .terminal { background: #161427; }
+html[data-theme="light"] .achievement > div { background: linear-gradient(110deg, #e0dcfa, #c9edf0); border-color: #9d94d3; }
+html[data-theme="light"] .contact { background: #e9e7f3; }
+html[data-theme="light"] .contact input, html[data-theme="light"] .contact textarea { color: #171426; border-color: #77708680; }
+html[data-theme="light"] .contact label, html[data-theme="light"] .contact-bottom, html[data-theme="light"] .contact-note { color: #5c5870; }
+html[data-theme="light"] .email { color: #28214f; }
 .project-art img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: .94; filter: saturate(1.08) contrast(1.06); transform: scale(1.035); transition: transform .7s cubic-bezier(.2,.7,.2,1), filter .5s ease; }
 .project:nth-child(even) .project-art img { object-position: 58% center; }
 .project:nth-child(3n) .project-art img { object-position: 45% center; filter: saturate(.94) contrast(1.1); }
