@@ -82,5 +82,10 @@ html[data-theme="light"] .email { color: #28214f; }
 @media (max-width: 760px) {
   .constellation { min-height: 420px; }
   .star { font-size: .62rem; padding: 9px 11px; }
+  .project-art { min-height: 0; aspect-ratio: 16 / 10; }
+  .project-art img,
+  .project:nth-child(even) .project-art img,
+  .project:nth-child(3n) .project-art img { object-fit: contain; object-position: center; padding: 18px 14px 42px; transform: none; }
+  .project:hover .project-art img { transform: none; }
 }
 @media (max-width: 900px) { .nav nav { display: none; } }
